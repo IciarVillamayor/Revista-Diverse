@@ -1,0 +1,105 @@
+
+
+
+.content{
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.content .logo {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2em;
+
+}
+.content .logo img{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+ 
+}
+
+.content .content_holder{
+ 
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 5px;
+        width: 90%;
+        background-color: rgb(15, 15, 15);
+        padding: 2em;
+        margin: 0 auto;
+}
+
+form {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Gotham Rounded", sans-serif;
+    justify-content: space-between;
+}
+
+
+
+    input {
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        border: none;
+        border-radius: 2px;
+    
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    .long {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .short{
+        width: 40%;
+        padding: 1em;
+        margin-right: 0.3em;
+    }
+
+    a {
+        margin-bottom: 0.2em;
+        display: block;
+        display: flex;
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+
+    .boton-ses {
+        background-color: #eee;
+
+        border-radius: 4px;
+        color:#333;
+        padding: 0.7em;
+        border: 1px solid #333;
+        font-family: "Gotham Rounded", sans-serif;
+        transition: all 200ms ease-in-out;
+        margin-top: 1em;
+   
+    }
+
+    .boton-ses:hover{
+        background-color: rgb(15, 15, 15);
+        border: 1px solid white;
+        cursor: pointer;
+        color: white;
+        transition: all 200ms ease-in-out;
+    }
+    
+
+
+

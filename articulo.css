@@ -13,7 +13,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Gotham Rounded", sans-serif;
-  font-weight: normal;
 }
 
 .header {
@@ -28,77 +27,51 @@ body {
   height: 80px;
 }
 
-/*=====     CONTENIDO   ======*/
-.content {
+.contentarticulo {
   width: 100%;
 }
-.imagen-principal {
-  width: 50%;
-  height: 600px;
+
+.divimgprincipal img{
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
+  position: relative;
+  object-position: 50% 10%;
+}
+.noti{
+  width:100%;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 20px;
+}
+.textosarticulos{}
+
+.divdestacado{
+  width: 40%;
+  height: 100vh;
+  margin-right: 10px;
   position: relative;
 }
-
-.imagen-principal img {
+.divdestacado img{
   object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.title {
-  position: absolute;
-
-  bottom: 105px;
-  left: 216px;
-  font-family: "Gotham", sans-serif;
-  font-size: 2rem;
-  color: rgb(0, 0, 0);
-}
-
-.contenido-articulo {
-  margin-left: 4.5em;
-  margin-top: 3em;
-  width: 70%;
-}
-
-.subtitle {
-  color: black;
-  width: 100%;
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
-.contenido-articulo p {
-  display: block;
-  width: 70%;
-}
-
-.contenido-articulo b {
-  font-size: 1rem;
-}
-
-.contenido-articulo .img-articulo {
-  width: 400px;
-  height: 500px;
   position: relative;
-  float: left;
-  padding: 1em 2em 2em 0px;
+  height: 100vh;
+  width:60vh;
 }
-.contenido-articulo .img-articulo img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+.divtextodestacado{
+  box-sizing: border-box;
+  border: 3px solid black;
+  padding: 5px;
+  position: absolute;
+  top:70vh;
+  width: 90%;
 }
 
-.contenido-articulo .img-articulo b {
-  font-size: 2em;
-  display: block;
-  margin-top: 1em;
-  margin-left: 1em;
-  font-family: "Gotham", sans-serif;
-  position: absolute;
-  bottom: 3%;
-  right: 2%;
+b{
+  font-size: 200%;
 }
+
+
 
 .footer {
   display: flex;
@@ -131,68 +104,47 @@ body {
 }
 
 @media only screen and (max-width: 960px) {
+  .noti{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+  }
 
-    .imagen-principal {
-        width: 100%;
-        height: 600px;
-        position: relative;
-      }
+  .divdestacado{
+    width: auto;
+    margin: 0 auto;
+  }
 
-    .title {
-        position: absolute;
-        bottom: 222px;
-        left: 216px;
-        font-family: "Gotham", sans-serif;
-        font-size: 1.5rem;
-        color: rgb(0, 0, 0);
-    }
+  .divdestacado img{
 
-    .contenido-articulo p {
-        display: block;
-        width: 118%;
-    }
+  }
 
-
+  .divtextodestacado{
+    width: 37%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-  body {
-    width: 118%;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-    font-family: "Gotham Rounded", sans-serif;
-    font-weight: normal;
+
+  .divtextodestacado{
+    width: 30%;
+    top:70vh;
+  width: 90%;
   }
 
-  .imagen-principal {
-    width: 100%;
-    height: 600px;
-    position: relative;
+  .divimgprincipal{
+    height: 60%;
   }
 
-  .title {
-    position: absolute;
-    bottom: -9px;
-    left: 36px;
-    font-family: "Gotham", sans-serif;
-    font-size: 1.1rem;
-    color: rgb(0, 0, 0);
+  .footer .rs{
+    width: 80%;
   }
 
-
-  .contenido-articulo .img-articulo {
-    width: 400px;
-    height: 500px;
-    position: relative;
-    float: right;
-    padding: 1em 2em 2em 0px;
-}
-
-.contenido-articulo p {
-    display: block;
-    width: 100%;
-}
-
-
+  .footer .rs .fa{
+    width: 80%;
+    margin: .5em;
+    margin-bottom: 1.5em;
+    font-size: 1.5rem;
+  }
 }
